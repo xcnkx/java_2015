@@ -1,0 +1,13 @@
+1.  Why does the program print the two lines below?
+  (2) Exception occurred
+    countの値が2のとき例外をスローするコードであるため。
+  (2) in finally clause
+    finally内は最後に必ず実行される処理であるため。
+
+2. Why does the program print the line below (It looks like the program does not print the line becuase of the break statement)?
+  (3) in finally clause
+    finally内の処理は例外の有無に関係なく最後に必ず行われるため。
+
+3. Why does the program print the line below?
+  Main program ends
+    ループを抜けた後にこのように表示するコードであるため。

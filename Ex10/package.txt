@@ -1,0 +1,31 @@
+Which line of code will you need to add to each source file to put each class in the right package?
+
+Package.java
+import mygame.server.*;
+import mygame.shared.*;
+import mygame.client.*;
+
+Server.java
+package mygame.server;
+
+Utilities.java
+package mygame.shared;
+
+Client.java
+package mygame.client;
+
+
+To adhere to the directory structure, you will need to create some subdirectories in the development directory and put source files in the correct subdirectories. What subdirectories must you create? Which subdirectory does each source file go in?
+
+P1 <- Package.java
+P1/mygame <- server
+             shared
+             client
+P1/mygame/server <- Server.java
+P1/mygame/shared <- Utilities.java
+P1/mygame/client <- Client.java
+ 
+
+Do you think you'll need to make any other changes to the source files to make them compile correctly? If so, what?
+
+sharedを入っているクラスと同じ名前のutilitiesに変更する

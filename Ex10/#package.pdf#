@@ -1,0 +1,19 @@
+Which line of code will you need to add to each source file to put each class in the right package? 
+      
+      package mygame.server
+      package mygame.shared
+      package mygame.client
+
+To adhere to the directory structure, you will need to create some subdirectories in the development directory and put source files in the correct subdirectories. What subdirectories must you create? Which subdirectory does each source file go in? 
+ 
+	Server.java -> mygame/server/
+	Utilities -> mygame/shared/
+	Client -> mygame/client/
+
+   Do you think you'll need to make any other changes to the source files to make them compile correctly? If so, what? 
+
+   You'll need to import the package files in the source code like as
+
+   import mygame.server.*;
+   import mygame.
+   

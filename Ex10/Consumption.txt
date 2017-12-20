@@ -1,0 +1,2 @@
+FuelConsumptionCalculationクラスはパッケージfuelconsumption内に存在する。
+BusTaxiクラスはfuelconsumptionをimportしているので互いに参照可能である。

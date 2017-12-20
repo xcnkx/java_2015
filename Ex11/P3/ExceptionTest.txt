@@ -1,0 +1,17 @@
+NegativeArraySizeException
+配列のサイズに負の数を代入しているため。
+
+OutOfMemoryError
+代入する数がメモリの容量を超えている。
+
+ClassCastException
+tcはオブジェクトなのでintにキャストできない。
+
+NullPointerException
+tcの中身がnullになっているため。
+
+ArithmeticException
+数字を0で割るケースが生じるため。
+
+ArrayIndexOutOfBoundsException
+配列のサイズを超えた代入をしているため。

@@ -1,0 +1,40 @@
+abstract class Animal {
+   //private static int count;
+    public static int countdog=0,countcat=0,count;
+    //public static void increment(){count++;}
+    public static void increment(int t) {
+        if(t==0)countdog++;
+        else countcat++;
+        }
+    public static int getCount() { return count; }
+    abstract void noise();
+}
+class Dog extends Animal {
+   public Dog() {};
+   public void noise() {
+      System.out.println("Woof");
+      //increment();
+      increment(1);
+   }
+   public static int getCount(){return countdog;}//メゾットの追加
+}
+class Cat extends Animal {
+   public Cat() {};
+   public void noise() {
+      System.out.println("Meow");
+      //increment();
+      increment(0);
+   }
+   public static int getCount(){return countcat;}//メゾットの追加　
+}
+public class Counter{
+    public static void main(String[] args) {
+      Animal[] a = {new Dog(), new Cat(), new Cat(), new Dog(), new Dog()};
+      for (int i = 0; i < a.length; i++)
+         a[i].noise();
+     System.out.println(Dog.getCount() + " woofs and " + Cat.getCount() + " meow");
+    }
+}
+ 
+//dogもcatもincrementメゾットがAnimalのincrementメゾットを呼んでいるから。
+//また、Animalにcountの変数が一つしかないので、catとdogを分けてカウントする事ができない。
